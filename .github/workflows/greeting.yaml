@@ -33,6 +33,7 @@ jobs:
           git checkout main
           git branch --set-upstream-to=origin/main
           git pull
+          pip install pytest
           pytest >> log_pytest.txt
           ls -a
           git add .
